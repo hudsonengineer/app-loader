@@ -1,0 +1,20 @@
+{
+  "loader": {
+    "loading": "Carregando... versão",
+    "platform": "Web"
+  },
+
+  "footer": {
+    "fixedNetworkNote": "chamada para a rede fixa nacional",
+    "location": "Zona de atuação na Grande Lisboa...",
+    "customerSupport": "Apoio ao cliente",
+    "contacts": "Contactos",
+    "terms": "Termos e condições",
+    "privacy": "Política de privacidade",
+    "faq": "Perguntas frequentes",
+    "cookies": "Política de cookies",
+    "info": "Informações",
+    "services": "Nossos serviços",
+    "pricing": "Tabela de preços"
+  }
+}

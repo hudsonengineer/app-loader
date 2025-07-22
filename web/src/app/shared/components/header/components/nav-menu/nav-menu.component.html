@@ -1,0 +1,18 @@
+<div class="nav-toggle" (click)="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="overlay" [class.open]="isOpen()" (click)="closeMenu()">
+    <div class="menu" (click)="$event.stopPropagation()">
+        <button class="close" (click)="closeMenu()">
+        <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <nav class="menu-links">
+        <a routerLink="/" routerLinkActive="active" (click)="closeMenu()">Início</a>
+        <a routerLink="/produtos" routerLinkActive="active" (click)="closeMenu()">Produtos</a>
+        <a routerLink="/sobre" routerLinkActive="active" (click)="closeMenu()">Sobre</a>
+        <a routerLink="/contato" routerLinkActive="active" (click)="closeMenu()">Contato</a>
+        </nav>
+    </div>
+</div>

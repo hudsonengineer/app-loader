@@ -1,0 +1,12 @@
+:host {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    }
+
+    @media screen and (max-width: 767px) {
+    :host {
+        padding-bottom: 64px; /* espaço para o bottom-navbar fixo */
+    }
+}

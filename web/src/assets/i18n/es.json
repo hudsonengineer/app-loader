@@ -1,0 +1,20 @@
+{
+  "loader": {
+    "loading": "Cargando... versión",
+    "platform": "Web"
+  },
+
+  "footer": {
+    "fixedNetworkNote": "llamada a la red fija nacional",
+    "location": "Zona de actuación en el Gran Lisboa...",
+    "customerSupport": "Atención al Cliente",
+    "contacts": "Contactos",
+    "terms": "Términos y Condiciones",
+    "privacy": "Política de Privacidad",
+    "faq": "Preguntas Frecuentes",
+    "cookies": "Política de Cookies",
+    "info": "Información",
+    "services": "Nuestros Servicios",
+    "pricing": "Lista de Precios"
+  }
+}

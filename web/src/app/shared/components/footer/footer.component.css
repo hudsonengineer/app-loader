@@ -1,0 +1,146 @@
+.footer {
+  background-color: var(--footer-bg, #f8f9fa);
+  color: var(--footer-text, #333);
+  padding: 3rem 2rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+.footer-contact a {
+  display: block;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 4px;
+}
+
+.footer-contact .note {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #007bff;
+}
+
+.footer-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-icons img {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.footer-divider {
+  margin: 2rem auto;
+  width: 80%;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* Theme toggle */
+.theme-toggle button {
+  padding: 6px 12px;
+  background-color: #ececec;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* ----------------------------
+   MEDIA QUERIES
+---------------------------- */
+
+@media screen and (max-width: 991px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer-logo {
+    width: 90px;
+  }
+
+  .footer-column ul li {
+    font-size: 0.85rem;
+  }
+
+  .footer-icons img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,63 @@
+<footer class="footer">
+  <div class="footer-content">
+
+    <div class="footer-column brand">
+      <img src="assets/logo.svg" alt="Logo Dona Tânia" class="footer-logo" />
+      <p class="footer-contact">
+        <a href="mailto:geral@email.com">geralemail.com</a><br />
+        <a href="tel:+351256781011">+351 256 781 011</a><br />
+        <span class="note">({{ 'footer.fixedNetworkNote' | translate }})</span>
+      </p>
+      <p class="location">{{ 'footer.location' | translate }}</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>{{ 'footer.customerSupport' | translate }}</h4>
+      <ul>
+        <li><a routerLink="/contact">{{ 'footer.contacts' | translate }}</a></li>
+        <li><a routerLink="/terms">{{ 'footer.terms' | translate }}</a></li>
+        <li><a routerLink="/privacy">{{ 'footer.privacy' | translate }}</a></li>
+        <li><a routerLink="/faq">{{ 'footer.faq' | translate }}</a></li>
+        <li><a routerLink="/cookies">{{ 'footer.cookies' | translate }}</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>{{ 'footer.info' | translate }}</h4>
+      <ul>
+        <li><a routerLink="/services">{{ 'footer.services' | translate }}</a></li>
+        <li><a routerLink="/pricing">{{ 'footer.pricing' | translate }}</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column theme-toggle">
+      <h4>{{ 'footer.theme' | translate }}</h4>
+      <button (click)="toggleTheme()">
+        {{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Icons section -->
+  <div class="footer-icons">
+    <a href="https://wa.me/351256781011" target="_blank" aria-label="WhatsApp">
+      <img src="assets/icons/whatsapp.svg" alt="WhatsApp" />
+    </a>
+    <a href="tel:+351256781011" aria-label="Phone">
+      <img src="assets/icons/phone.svg" alt="Phone" />
+    </a>
+    <a href="mailto:geral@email.com" aria-label="Email">
+      <img src="assets/icons/email.svg" alt="Email" />
+    </a>
+  </div>
+
+  <!-- Horizontal line -->
+  <hr class="footer-divider" />
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>powered by Hudson Engineer</p>
+    <p>© {{ currentYear }} Dona Tânia</p>
+    <p>{{ version }}</p>
+  </div>
+</footer>

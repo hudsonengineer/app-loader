@@ -1,0 +1,20 @@
+{
+  "loader": {
+    "loading": "Loading... version",
+    "platform": "Web"
+  },
+
+  "footer": {
+    "fixedNetworkNote": "call to the national fixed network",
+    "location": "Coverage area in Greater Lisbon...",
+    "customerSupport": "Customer Support",
+    "contacts": "Contacts",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "faq": "Frequently Asked Questions",
+    "cookies": "Cookie Policy",
+    "info": "Information",
+    "services": "Our Services",
+    "pricing": "Price List"
+  }
+}

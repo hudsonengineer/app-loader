@@ -1,0 +1,36 @@
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: var(--header-bg, #ffffff);
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 1001;
+    }
+
+    .top-navbar .logo img {
+    height: 40px;
+    width: auto;
+    }
+
+    .nav-links {
+    display: flex;
+    gap: 24px;
+    }
+
+    .nav-links a {
+    text-decoration: none;
+    color: var(--text-color, #333);
+    font-weight: 500;
+    }
+
+    .nav-links a.active {
+    color: var(--accent-color, #007aff);
+    }
+
+    @media screen and (max-width: 991px) {
+    .nav-links {
+        display: none;
+    }
+}

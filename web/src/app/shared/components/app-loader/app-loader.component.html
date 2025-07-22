@@ -1,0 +1,18 @@
+<div class="loader-container" *ngIf="isVisible()">
+  <div class="logo-wrapper">
+    <img src="assets/wormGPT.ico" alt="Logo" class="logo" />
+
+    <!-- Novo título 
+    <h1 class="app-title"></h1>-->
+
+    <!-- Novo subtítulo 
+    <h2 class="app-subtitle"></h2>-->
+
+    <!-- Tradução existente -->
+    <p class="version-text">
+      {{ 'loader.loading' | translate }} {{ 'loader.platform' | translate }}
+    </p>
+  </div>
+
+  <div class="app-version-label">{{ version.number }}</div>
+</div>

@@ -1,0 +1,213 @@
+/* ----------------------------
+   ESTILOS GERAIS (DESKTOP)
+---------------------------- */
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  background: linear-gradient(-45deg, #e8f4f8, #ffffff, #ff4848, #ff0000);
+  background-size: 400% 400%;
+  animation: gradientAnimation 6s ease-in-out infinite, fadeOut 0.5s ease-in-out forwards;
+  animation-delay: 0s, 2.5s;
+}
+
+.logo-wrapper {
+  text-align: center;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  animation: spinIn 1s ease-in;
+}
+
+.app-title {
+  font-size: 2.9rem;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  color: #1e3a3a;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.app-subtitle {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #2d5a5a;
+    text-transform: capitalize;
+  margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.version-text {
+  font-size: 1rem;
+  color: #3a6b6b;
+  margin-bottom: 8px;
+}
+
+.app-version-label {
+  position: absolute;
+  bottom: 40px;
+  font-size: 0.8rem;
+  color: #4a7979;
+  width: 100%;
+  text-align: center;
+}
+
+/* ----------------------------
+   DARK MODE (via host-context)
+---------------------------- */
+
+:host-context(body.dark) .loader-container {
+  background: linear-gradient(-45deg, #1e1e2f, #2c3e50, #3b3b5c, #111);
+  background-size: 400% 400%;
+}
+
+/* ----------------------------
+   ANIMAÇÕES
+---------------------------- */
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes spinIn {
+  0% {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* ----------------------------
+   RESPONSIVO - LARGE TABLETS
+---------------------------- */
+
+@media screen and (max-width: 991px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .app-title {
+    font-size: 1.7rem;
+  }
+
+  .app-subtitle {
+    font-size: 1rem;
+  }
+
+  .version-text {
+    font-size: 0.95rem;
+  }
+
+  .app-version-label {
+    font-size: 0.75rem;
+  }
+}
+
+/* ----------------------------
+   RESPONSIVO - MEDIUM TABLETS
+---------------------------- */
+
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 95px;
+    height: 95px;
+  }
+
+  .app-title {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+  }
+
+  .app-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .version-text {
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+
+  .app-version-label {
+    font-size: 0.7rem;
+  }
+}
+
+/* ----------------------------
+   RESPONSIVO - SMARTPHONES
+---------------------------- */
+
+@media screen and (max-width: 479px) {
+  .logo {
+    width: 105px;
+    height: 105px;
+  }
+
+  .app-title {
+    font-size: 2.3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .app-subtitle {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .version-text {
+    font-size: 0.85rem;
+  }
+
+  .app-version-label {
+    font-size: 0.65rem;
+  }
+
+  .logo-wrapper {
+    padding: 0 1rem;
+  }
+}
